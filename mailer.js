@@ -1,7 +1,7 @@
-// require('dotenv').config();
+require('dotenv').config();
 
-// const domain = process.env.MAILGUN_DOMAIN;
-// const apiKey = process.env.MAILGUN_APIKEY;
+const emailAddress = process.env.EMAILADDRESS ;
+const emailPassword = process.env.EMAILPASSWORD ;
 
 module.exports.mail = (to, subject, message, messageHtml) => {
 	const mailOptions = {
@@ -17,8 +17,8 @@ module.exports.mail = (to, subject, message, messageHtml) => {
 	var transporter = nodemailer.createTransport({
 		service: 'gmail',
 		auth: {
-			user: 'gmnodetest53q@gmail.com',
-			pass: '53QYHf~{"xnSiWFa_&GNqa%CM'
+			user: emailAddress,
+			pass: emailPassword
 		}
 	});
 
