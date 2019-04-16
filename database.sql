@@ -1,3 +1,4 @@
+DROP SCHEMA drumblequiz CASCADE;
 --
 -- PostgreSQL database dump
 --
@@ -360,7 +361,7 @@ CREATE TABLE drumblequiz."AnswerInstance" (
 --
 
 CREATE SEQUENCE drumblequiz."AnswerInstance_Id_seq"
-    AS integer
+    
     START WITH 1
     INCREMENT BY 1
     NO MINVALUE
@@ -380,7 +381,7 @@ ALTER SEQUENCE drumblequiz."AnswerInstance_Id_seq" OWNED BY drumblequiz."AnswerI
 --
 
 CREATE SEQUENCE drumblequiz."Answer_Id_seq"
-    AS integer
+    
     START WITH 1
     INCREMENT BY 1
     NO MINVALUE
@@ -425,7 +426,7 @@ CREATE TABLE drumblequiz."QuestionInstance" (
 --
 
 CREATE SEQUENCE drumblequiz."QuestionInstance_Id_seq"
-    AS integer
+    
     START WITH 1
     INCREMENT BY 1
     NO MINVALUE
@@ -445,7 +446,7 @@ ALTER SEQUENCE drumblequiz."QuestionInstance_Id_seq" OWNED BY drumblequiz."Quest
 --
 
 CREATE SEQUENCE drumblequiz."Question_Id_seq"
-    AS integer
+    
     START WITH 1
     INCREMENT BY 1
     NO MINVALUE
@@ -488,7 +489,7 @@ CREATE TABLE drumblequiz."QuizQuestion" (
 --
 
 CREATE SEQUENCE drumblequiz."Quiz_Id_seq"
-    AS integer
+    
     START WITH 1
     INCREMENT BY 1
     NO MINVALUE
@@ -543,7 +544,7 @@ CREATE TABLE drumblequiz."UserInstance" (
 --
 
 CREATE SEQUENCE drumblequiz."UserInstance_Id_seq"
-    AS integer
+    
     START WITH 1
     INCREMENT BY 1
     NO MINVALUE
